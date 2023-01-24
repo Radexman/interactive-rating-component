@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+.section {
+  background-color: hsl(213deg, 19%, 18%);
+  min-height: 300px;
+  max-width: 50%;
+  margin-inline: auto;
+  border-radius: 1.5em;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section__star {
+  background-color: hsla(210deg, 1%, 31%, 0.568);
+  color: hsl(0deg, 0%, 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: grid;
+  place-content: center;
+}
+.section .captions__p {
+  color: hsl(217deg, 12%, 63%);
+  line-height: 1.4;
+}
+.section .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section .rating__box {
+  background-color: hsla(210deg, 1%, 31%, 0.568);
+  color: hsl(0deg, 0%, 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: grid;
+  place-content: center;
+  padding-top: 2px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.section .rating__box:hover {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.section .rating__box--active {
+  background-color: hsla(210deg, 1%, 31%, 0.568);
+  color: hsl(0deg, 0%, 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: grid;
+  place-content: center;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.section .button {
+  background-color: hsl(25deg, 97%, 53%);
+  border: 0;
+  border-radius: 1.5em;
+  width: 100%;
+  padding: 1em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.section .button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.main {
+  min-height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+  display: grid;
+  place-content: center;
+}/*# sourceMappingURL=main.css.map */

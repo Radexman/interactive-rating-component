@@ -1,0 +1,65 @@
+.section {
+    background-color: $clr-dark-blue;
+    min-height: 300px;
+    max-width: 50%;
+    margin-inline: auto;
+    border-radius: 1.5em;
+    padding: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+    justify-content: space-between;
+
+    &__star {
+        @include roundbox;
+    }
+
+    .captions__p {
+        color: $clr-light-gray;
+        line-height: 1.4;
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__box {
+            @include roundbox;
+            padding-top: 2px;
+            transition: $transition;
+
+            &:hover {
+                background-color: $clr-medium-gray;
+                color: $clr-white;
+                cursor: pointer;
+            }
+
+            &--active {
+                @include roundbox;
+                background-color: $clr-primary;
+                color: $clr-white;
+            }
+        }
+    }
+
+    .button {
+        background-color: $clr-primary;
+        border: 0;
+        border-radius: 1.5em;
+        width: 100%;
+        padding: 1em;
+        font-size: .9rem;
+        font-weight: $font-weight-bold;
+        letter-spacing: 3px;
+        color: $clr-white;
+        text-transform: uppercase;
+        transition: $transition;
+
+        &:hover {
+            background-color: $clr-white;
+            color: $clr-primary;
+            cursor: pointer;
+        }
+    }
+}
