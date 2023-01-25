@@ -1,0 +1,22 @@
+.section__feedback {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    display: none;
+
+    .section__img {
+        margin-inline: auto;
+    }
+
+    .section__p--msg {
+        color: $clr-primary;
+        background-color: hsla(210, 1%, 31%, 0.568);
+        padding: .5em 2em;
+        border-radius: 1.5em;
+    }
+
+    .captions__p {
+        margin-top: 1em;
+    }
+}

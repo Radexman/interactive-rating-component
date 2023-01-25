@@ -25,3 +25,12 @@ $transition: .2s ease-in;
     display: grid;
     place-content: center;
 }
+
+// ===== States ===== //
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}

@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
 .section {
   background-color: hsl(213deg, 19%, 18%);
-  min-height: 300px;
+  min-height: 400px;
   max-width: 50%;
   margin-inline: auto;
   border-radius: 1.5em;
-  padding: 2em;
+  padding: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,6 +96,33 @@
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
   cursor: pointer;
+}
+
+.section__feedback {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+.section__feedback .section__img {
+  margin-inline: auto;
+}
+.section__feedback .section__p--msg {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsla(210deg, 1%, 31%, 0.568);
+  padding: 0.5em 2em;
+  border-radius: 1.5em;
+}
+.section__feedback .captions__p {
+  margin-top: 1em;
 }
 
 *,
